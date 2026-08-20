@@ -1,0 +1,2645 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لبنیات سنتی اصیل | محصولات لبنی با کیفیت</title>
+    
+    <!-- Google Fonts - Persian Support -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =====================================================
+                   ROOT VARIABLES — رنگ‌های سنتی و اصیل
+                   ===================================================== */
+        :root {
+            --cream: #FDF8F0;
+            --warm-white: #FFFAF5;
+            --gold: #E8B923;
+            --gold-light: #FFDD55;
+            --gold-dark: #B8880F;
+            --deep-brown: #0C0C0E;
+            --warm-brown: #1C1C20;
+            --sage: #8BA888;
+            --terracotta: #C47A6A;
+            --navy: #1A2A3A;
+            --black-glossy: #0A0A0C;
+            --black-soft: #17171B;
+            --black-card: #1E1E23;
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+            --shadow-lg: 0 16px 64px rgba(0, 0, 0, 0.5);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* =====================================================
+                   RESET & BASE
+                   ===================================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--warm-white);
+            color: var(--deep-brown);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* =====================================================
+                   TYPOGRAPHY — ترکیب فونت‌های زیبا
+                   ===================================================== */
+        h1, h2, h3, .logo, .persian-title {
+            font-family: 'Noto Nastaliq Urdu', 'Scheherazade New', 'Vazirmatn', serif;
+        }
+
+        h1 {
+            font-size: clamp(2.8rem, 6vw, 4.8rem);
+            line-height: 1.3;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        h2 {
+            font-size: clamp(2.2rem, 4vw, 3.4rem);
+            font-weight: 700;
+            line-height: 1.3;
+            font-family: 'Noto Nastaliq Urdu', 'Scheherazade New', 'Vazirmatn', serif;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Noto Nastaliq Urdu', 'Scheherazade New', 'Vazirmatn', serif;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: rgba(45, 27, 14, 0.6);
+            font-weight: 300;
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 2;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-bottom: 8px;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        .gold-text {
+            color: var(--gold);
+        }
+
+        /* =====================================================
+                   BUTTONS — دکمه‌های زیبا
+                   ===================================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 40px;
+            border-radius: 60px;
+            font-family: 'Vazirmatn', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all var(--transition);
+            border: none;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: white;
+            box-shadow: 0 4px 24px rgba(196, 154, 108, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 40px rgba(196, 154, 108, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--deep-brown);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline-light {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+            transform: translateY(-3px);
+        }
+
+        /* =====================================================
+                   NAVIGATION — منوی شفاف با خطاطی
+                   ===================================================== */
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 16px 0;
+            transition: all var(--transition);
+        }
+
+        nav.scrolled {
+            background: rgba(10, 10, 12, 0.94);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4);
+            border-bottom: 1px solid rgba(232, 185, 35, 0.12);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Noto Nastaliq Urdu', 'Scheherazade New', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--deep-brown);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav.scrolled .logo {
+            color: #FFFFFF;
+        }
+
+        .logo-icon {
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            border-radius: 50%;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .logo-icon::after {
+            content: '🥛';
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            font-size: 20px;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all var(--transition);
+            position: relative;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        nav.scrolled .nav-links a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: white !important;
+            padding: 8px 28px;
+            border-radius: 60px;
+            font-weight: 600;
+        }
+
+        .nav-cta::after {
+            display: none !important;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(196, 154, 108, 0.4);
+            color: white !important;
+        }
+
+        nav.scrolled .nav-cta {
+            color: white !important;
+        }
+
+        /* Mobile Toggle */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .nav-toggle span {
+            width: 28px;
+            height: 2.5px;
+            background: white;
+            transition: all var(--transition);
+            display: block;
+        }
+
+        nav.scrolled .nav-toggle span {
+            background: #FFFFFF;
+        }
+
+        /* =====================================================
+                   HERO — بخش اول با کتیبه خطاطی
+                   ===================================================== */
+        .hero {
+            padding: 160px 0 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, #050505 0%, #101012 30%, #17171a 60%, #060606 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(232, 185, 35, 0.14) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 221, 85, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .hero-content h1 .gold-text {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content .subhead {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            font-weight: 300;
+            max-width: 480px;
+            line-height: 2;
+            margin-bottom: 32px;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(4px);
+            padding: 6px 16px;
+            border-radius: 60px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #4CAF50;
+            display: inline-block;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Hero Image — کارت محصولات */
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius);
+            padding: 32px;
+            width: 100%;
+            max-width: 440px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-card .card-title {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .hero-card .product-grid-mini {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .hero-card .product-mini {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: var(--radius-sm);
+            padding: 16px 12px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all var(--transition);
+        }
+
+        .hero-card .product-mini:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .hero-card .product-mini .emoji {
+            font-size: 2.8rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .hero-card .product-mini .name {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .hero-card .product-mini .desc {
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 0.6rem;
+        }
+
+        .hero-card .divider {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            margin: 16px 0;
+        }
+
+        .hero-card .trust-text {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .hero-card .trust-text span {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.7rem;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hero-card .trust-text span .icon {
+            font-size: 0.9rem;
+        }
+
+        /* =====================================================
+                   PRODUCTS SHOWCASE — بخش اصلی محصولات
+                   ===================================================== */
+        .products-showcase {
+            padding: 80px 0 100px;
+            background: var(--warm-white);
+        }
+
+        .products-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .products-header .section-tag {
+            color: var(--gold);
+        }
+
+        .products-header h2 {
+            margin-bottom: 12px;
+        }
+
+        .products-header .subtitle {
+            max-width: 560px;
+        }
+
+        /* Product Grid — با جای خالی برای عکس‌ها */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .product-item {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all var(--transition);
+            border: 1px solid rgba(45, 27, 14, 0.04);
+        }
+
+        .product-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .product-item .image-placeholder {
+            height: 260px;
+            background: linear-gradient(145deg, var(--cream), #F5EDE0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-item .image-placeholder .placeholder-icon {
+            font-size: 6rem;
+            opacity: 0.3;
+            transition: all var(--transition);
+        }
+
+        .product-item:hover .image-placeholder .placeholder-icon {
+            opacity: 0.5;
+            transform: scale(1.05);
+        }
+
+        .product-item .image-placeholder .upload-hint {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            background: rgba(45, 27, 14, 0.7);
+            backdrop-filter: blur(4px);
+            color: white;
+            padding: 4px 14px;
+            border-radius: 60px;
+            font-size: 0.65rem;
+            font-weight: 400;
+            opacity: 0;
+            transition: all var(--transition);
+        }
+
+        .product-item:hover .image-placeholder .upload-hint {
+            opacity: 1;
+        }
+
+        .product-item .product-info {
+            padding: 24px 28px 28px;
+        }
+
+        .product-item .product-info .tag {
+            display: inline-block;
+            background: var(--cream);
+            color: var(--gold);
+            padding: 2px 14px;
+            border-radius: 60px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .product-item .product-info h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            font-family: 'Noto Nastaliq Urdu', 'Scheherazade New', 'Vazirmatn', serif;
+        }
+
+        .product-item .product-info .description {
+            font-size: 0.9rem;
+            color: rgba(45, 27, 14, 0.6);
+            font-weight: 300;
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        .product-item .product-info .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(45, 27, 14, 0.04);
+        }
+
+        .product-item .product-info .meta .details {
+            display: flex;
+            gap: 16px;
+            font-size: 0.75rem;
+            color: rgba(45, 27, 14, 0.5);
+        }
+
+        .product-item .product-info .meta .details span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .product-item .product-info .meta .price {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--gold-dark);
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        /* =====================================================
+                   SPECIALTY SECTION — محصولات ویژه
+                   ===================================================== */
+        .specialty {
+            padding: 80px 0;
+            background: var(--black-glossy);
+        }
+
+        .specialty .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .specialty-image {
+            background: linear-gradient(145deg, #1E1E23, #0A0A0C);
+            border: 1px solid rgba(232, 185, 35, 0.2);
+            border-radius: var(--radius);
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .specialty-content h2 {
+            margin-bottom: 12px;
+        }
+
+        .specialty-content p {
+            color: rgba(255, 255, 255, 0.65);
+            font-weight: 300;
+            margin-bottom: 16px;
+            line-height: 2;
+            font-size: 1.05rem;
+        }
+
+        .specialty-content h2 {
+            color: #FFFFFF;
+        }
+
+        .specialty-content .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .specialty-content .features div {
+            background: var(--black-card);
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            border-right: 3px solid var(--gold);
+            font-size: 0.9rem;
+        }
+
+        .specialty-content .features div strong {
+            display: block;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        .specialty-content .features div span {
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
+        /* =====================================================
+                   CONTACT — اطلاعات تماس (بدون فرم)
+                   ===================================================== */
+        .contact-info {
+            padding: 80px 0 100px;
+            background: var(--black-glossy);
+        }
+
+        .contact-info .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 16px;
+            color: #FFFFFF;
+            font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+            line-height: 1.5;
+        }
+
+        .contact-info .subtitle {
+            text-align: right;
+            margin: 0 0 32px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .contact-details {
+            display: grid;
+            gap: 24px;
+        }
+
+        .contact-details .item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: var(--black-card);
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow);
+            border-right: 4px solid var(--gold);
+        }
+
+        .contact-details .item .icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details .item .info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-details .item .info .label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .contact-details .item .info .value {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #FFFFFF;
+            direction: ltr;
+        }
+
+        .contact-details .item .info .value[dir="rtl"] {
+            direction: rtl;
+        }
+
+        .contact-details .item.order-link {
+            border-right-color: var(--sage);
+        }
+
+        .contact-details .item.order-link .value a {
+            color: var(--gold-dark);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 1px solid var(--gold);
+            transition: all var(--transition);
+        }
+
+        .contact-details .item.order-link .value a:hover {
+            color: var(--deep-brown);
+            border-bottom-color: var(--deep-brown);
+        }
+
+        .contact-map {
+            background: var(--black-card);
+            border-radius: var(--radius);
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed var(--gold-light);
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+        }
+
+        .contact-map img {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            object-fit: cover;
+            border-radius: calc(var(--radius) - 2px);
+        }
+
+        .contact-map .map-icon {
+            font-size: 4rem;
+        }
+
+        .contact-map .map-text {
+            color: rgba(45, 27, 14, 0.4);
+            font-size: 0.9rem;
+        }
+
+        /* =====================================================
+                   FOOTER — فوتر ساده و اصیل
+                   ===================================================== */
+        footer {
+            background: var(--black-glossy);
+            padding: 40px 0 32px;
+            color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(232, 185, 35, 0.15);
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        footer .logo {
+            color: white;
+            font-size: 1.6rem;
+        }
+
+        footer .logo-icon {
+            width: 36px;
+            height: 36px;
+        }
+
+        footer .logo-icon::after {
+            font-size: 16px;
+        }
+
+        footer .copy {
+            font-size: 0.8rem;
+        }
+
+        footer .social {
+            display: flex;
+            gap: 16px;
+        }
+
+        footer .social a {
+            color: rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+            font-size: 1.4rem;
+            transition: all var(--transition);
+        }
+
+        footer .social a:hover {
+            color: var(--gold);
+        }
+
+        /* =====================================================
+                   RESPONSIVE — واکنش‌گرا
+                   ===================================================== */
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero {
+                padding: 140px 0 60px;
+                min-height: auto;
+            }
+
+            .specialty .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-info .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .gallery-banner .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100vh;
+                background: var(--warm-white);
+                flex-direction: column;
+                justify-content: center;
+                gap: 24px;
+                transform: translateX(100%);
+                transition: transform var(--transition);
+                padding: 40px;
+                box-shadow: var(--shadow-lg);
+            }
+
+            .nav-links.active {
+                transform: translateX(0);
+            }
+
+            .nav-links a {
+                color: var(--deep-brown) !important;
+                font-size: 1.2rem;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .nav-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+            .nav-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+
+            .hero-card .product-grid-mini {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .specialty-image {
+                height: 260px;
+            }
+
+            .specialty-content .features {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-banner .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-details .item {
+                flex-direction: column;
+                text-align: center;
+                border-right: none;
+                border-top: 4px solid var(--gold);
+            }
+
+            .contact-details .item .info .value {
+                font-size: 0.9rem;
+            }
+
+            footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-card .product-grid-mini {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .hero-card .product-mini {
+                padding: 12px 8px;
+            }
+
+            .hero-card .product-mini .emoji {
+                font-size: 2rem;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .gallery-banner .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .gallery-banner .gallery-item {
+                aspect-ratio: 1;
+                font-size: 2rem;
+            }
+
+            .product-item .image-placeholder {
+                height: 200px;
+            }
+
+            .specialty-image {
+                height: 220px;
+            }
+        }
+
+        /* =====================================================
+                   SCROLL REVEAL
+                   ===================================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.08s; }
+        .reveal-delay-2 { transition-delay: 0.16s; }
+        .reveal-delay-3 { transition-delay: 0.24s; }
+        .reveal-delay-4 { transition-delay: 0.32s; }
+        .reveal-delay-5 { transition-delay: 0.40s; }
+    </style>
+</head>
+<body>
+
+    <!-- =====================================================
+    NAVIGATION — منوی اصلی
+    ===================================================== -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon"></span>
+                لبنیات <span>سنتی اصیل</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#products">محصولات</a></li>
+                <li><a href="#specialty">ویژه‌ها</a></li>
+                <li><a href="#contact" class="nav-cta">تماس با ما</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- =====================================================
+    HERO — بخش اصلی با کتیبه
+    ===================================================== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <span class="hero-badge">
+                        <span class="dot"></span>
+                        تازه‌ترین محصولات لبنی
+                    </span>
+                    <span class="hero-badge">🥛 بدون مواد نگه‌دارنده</span>
+                    <span class="hero-badge">🏅 کیفیت تضمینی</span>
+                </div>
+
+                <h1>
+                    لبنیاتِ<br>
+                    <span class="gold-text">سنتی اصیل</span>
+                </h1>
+
+                <p class="subhead">
+                    از دامداری‌های منتخب ایران، با کیفیت‌ترین شیر، پنیر، ماست و کره را
+                    به سفره‌های شما می‌آوریم. طعمی که از یاد نمی‌برید.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">مشاهده محصولات →</a>
+                    <a href="#contact" class="btn btn-outline-light">تماس با ما</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-title">🍃 محصولات ویژه</div>
+                    <div class="product-grid-mini">
+                        <div class="product-mini">
+                            <span class="emoji">🥛</span>
+                            <div class="name">شیر تازه</div>
+                            <div class="desc">گاوهای دشت</div>
+                        </div>
+                        <div class="product-mini">
+                            <span class="emoji">🧀</span>
+                            <div class="name">پنیر محلی</div>
+                            <div class="desc">رسیده ۶ ماه</div>
+                        </div>
+                        <div class="product-mini">
+                            <span class="emoji">🥄</span>
+                            <div class="name">ماست</div>
+                            <div class="desc">چربی ۱۰٪</div>
+                        </div>
+                        <div class="product-mini">
+                            <span class="emoji">🧈</span>
+                            <div class="name">کره حیوانی</div>
+                            <div class="desc">طبیعی و ارگانیک</div>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="trust-text">
+                        <span><span class="icon">✅</span> شیر خام باکیفیت</span>
+                        <span><span class="icon">🌿</span> بدون افزودنی</span>
+                        <span><span class="icon">⭐</span> تهیه‌شده با عشق</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+    PRODUCTS — نمایش محصولات با جای عکس
+    ===================================================== -->
+    <section class="products-showcase" id="products">
+        <div class="container">
+            <div class="products-header">
+                <span class="section-tag">✦ محصولات ما</span>
+                <h2>بهترین‌های <span class="gold-text">لبنیات سنتی اصیل</span></h2>
+                <p class="subtitle">
+                    هر محصول با عشق و دقت تهیه شده تا طعم اصیل و کیفیت بی‌نظیر را به شما هدیه دهد.
+                </p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-item reveal reveal-delay-1">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic48.jpg" alt="شیر تازه گاوی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">پرطرفدار</span>
+                        <h3>شیر تازه گاوی</h3>
+                        <p class="description">
+                            شیر کامل با کیفیت بالا، بدون مواد نگه‌دارنده و از دامداری‌های منتخب.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🥛 ۳.۵٪ چربی</span>
+                                <span>🧊 ۲۴ ساعت</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item reveal reveal-delay-2">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic18.jpg" alt="ارده 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic17.jpg" alt="ارده 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic19.jpg" alt="ارده 3" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic20.jpg" alt="ارده 4" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="3" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">زرقانی</span>
+                        <span class="tag">ویژه</span>
+                        <h3>ارده و شیره انگور ویژه</h3>
+                        <p class="description">
+                            ارده، شیره انگور و حلوای زرقانی درجه یک با طعمی بی نظیر
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span> ✨ درجه یک</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-item reveal reveal-delay-3">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic65.jpg" alt="ماست سنتی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic16.jpg" alt="ماست سنتی 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic21.jpg" alt="ماست سنتی 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">درجه یک</span>
+                        <span class="tag">ویژه</span>
+                        <h3>ماست و ماست موسیر سنتی</h3>
+                        <p class="description">
+                            ماست با کیفیت با طعمی فراموش نشدنی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🥛 پر چرب</span>
+                                <span>🥛 کم چرب</span>
+                                <span>🥛 ماست موسیر</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-item reveal reveal-delay-4">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic66.jpg" alt="کره حیوانی ارگانیک 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">طبیعی</span>
+                        <h3>کره حیوانی ارگانیک</h3>
+                        <p class="description">
+                            کره گاوی با طعم بی‌نظیر، بدون روغن‌های گیاهی و مواد افزودنی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🧈 ۸۲٪ چربی</span>
+                                <span>🌿 ارگانیک</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-item reveal reveal-delay-5">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic12.jpg" alt="دوغ سنتی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic13.jpg" alt="دوغ سنتی 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic14.jpg" alt="دوغ سنتی 3" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic47.jpg" alt="دوغ سنتی 4" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="3" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">ویژه</span>
+                        <h3>دوغ سنتی</h3>
+                        <p class="description">
+                            دوغ گوارا با نعناع و گل‌محمدی، عالی برای روزهای گرم تابستان.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🌿 نعناع تازه</span>
+                                <span>❄️ خنک و گوارا</span>
+                                <span>🐫 دوغ شتر</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-item reveal reveal-delay-1">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic64.jpg" alt="کشک محلی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic6.jpg" alt="کشک محلی 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic42.jpg" alt="کشک محلی 3" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic7.jpg" alt="کشک محلی 4" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic15.jpg" alt="کشک محلی " style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic24.jpg" alt="کشک محلی " style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="3" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="4" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="5" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">خاص</span>
+                        <h3>کشک محلی</h3>
+                        <p class="description">
+                            کشک تر و خشک با طعم سنتی، مناسب برای آش و غذاهای محلی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🧂 محلی</span>
+                                <span>🥛 غنی از پروتئین</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 - نان خشک و چیپس با اسلایدشو ۴ عکس -->
+                <div class="product-item reveal reveal-delay-2">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic1.jpg" alt="نان خشک و چیپس 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic2.jpg" alt="نان خشک و چیپس 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic3.jpg" alt="نان خشک و چیپس 3" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic4.jpg" alt="نان خشک و چیپس 4" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic5.jpg" alt="نان خشک و چیپس 5" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic41.jpg" alt="نان خشک و چیپس 6" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+                            
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+                            
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="3" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">پرطرفدار</span>
+                        <h3>نان خشک و نان چیپس</h3>
+                        <p class="description">
+                            نان خشک و چیپس با کیفیت بالا، مناسب برای سفر و پذیرایی. طعمی بی‌نظیر و ماندگاری عالی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🍞 نان خشک</span>
+                                <span>🥨 چیپس</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-item reveal reveal-delay-3">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic46.jpg" alt="پنیر تازه گوسفندی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic10.jpg" alt="پنیر تازه گوسفندی 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic8.jpg" alt="پنیر تازه گوسفندی 3" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic9.jpg" alt="پنیر تازه گوسفندی 4" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic11.jpg" alt="پنیر تازه گوسفندی 4" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="3" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">تازه</span>
+                        <h3>پنیر تازه لیقوان گوسفندی و گاوی</h3>
+                        <p class="description">
+                            پنیر تازه با شیر گوسفند، نرم و لطیف با طعمی دلپذیر.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🐑 شیر گوسفند</span>
+                                <span>🐄 شیر گاو</span>
+                                <span>🧂 تازه</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-item reveal reveal-delay-4">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic23.jpg" alt="سر شیر 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">سنتی</span>
+                        <h3>سر شیر</h3>
+                        <p class="description">
+                            سرشیر خالص و غلیظ، تهیه‌شده از شیر تازه به روش سنتی، مناسب صبحانه‌های اصیل.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🥛 شیر خالص</span>
+                                <span>🍯 مناسب صبحانه</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-item reveal reveal-delay-5">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic25.jpg" alt="آلوچه جنگلی و لواشک و قرقروت 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic27.jpg" alt="آلوچه جنگلی و لواشک و قرقروت 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic26.jpg" alt="آلوچه جنگلی و لواشک و قرقروت 3" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">ویژه</span>
+                        <h3>آلوچه جنگلی، لواشک و قرقروت تمشک</h3>
+                        <p class="description">
+                            ترکیبی از طعم‌های ترش و شیرین سنتی؛ آلوچه جنگلی، لواشک خانگی و قرقروت اصیل.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🍇 آلوچه جنگلی</span>
+                                <span>🍬 لواشک</span>
+                                <span>🧂 قرقروت</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-item reveal reveal-delay-1">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic45.png" alt="عسل گون 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic28.jpg" alt="عسل گون 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">طبیعی</span>
+                        <h3>عسل گون</h3>
+                        <p class="description">
+                            عسل طبیعی و خالص گون، برداشت‌شده از مراتع کوهستانی با طعمی معطر و اصیل.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🍯 خالص</span>
+                                <span>🌸 گون</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-item reveal reveal-delay-2">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic29.jpg" alt="زعفران 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">درجه یک</span>
+                        <h3>زعفران</h3>
+                        <p class="description">
+                            زعفران نگین سرگل، معطر و پررنگ، برداشت‌شده از بهترین مزارع.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🌺 نگین</span>
+                                <span>✨ معطر</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="product-item reveal reveal-delay-3">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic30.jpg" alt="زیتون و روغن زیتون 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic40.jpg" alt="زیتون و روغن زیتون 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic31.jpg" alt="زیتون و روغن زیتون 3" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="2" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">ویژه</span>
+                        <h3>زیتون و روغن زیتون</h3>
+                        <p class="description">
+                            زیتون پرورده و روغن زیتون خالص، فرآوری‌شده به روش سنتی با کیفیت درجه یک.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🫒 زیتون</span>
+                                <span>🫙 روغن زیتون</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="product-item reveal reveal-delay-4">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic32.jpg" alt="تمر هندی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic33.jpg" alt="تمر هندی 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">خاص</span>
+                        <h3>تمر هندی</h3>
+                        <p class="description">
+                            تمر هندی با طعم ترش و شیرین دلچسب، مناسب برای طبخ و مصرف روزانه.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🍈 ترش و شیرین</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="product-item reveal reveal-delay-5">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic34.jpg" alt="کلوچه 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic35.jpg" alt="کلوچه 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">خانگی</span>
+                        <span class="tag">دارای طعم های مختلف</span>
+                        <h3>کلوچه</h3>
+                        <p class="description">
+                            کلوچه خانگی با طعم اصیل و مواد اولیه سالم، مناسب پذیرایی و عصرانه.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🥮 خانگی</span>
+                                <span>🍃 تازه</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 16 -->
+                <div class="product-item reveal reveal-delay-1">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic36.jpg" alt="ماستینه 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic43.jpg" alt="ماستینه 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">سنتی</span>
+                        <h3>ماستینه</h3>
+                        <p class="description">
+                            ماستینه محلی با طعمی خاص و ترکیبی دلچسب، مناسب سفره‌های سنتی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🥛 سنتی</span>
+                                <span>🌿 خوش‌طعم</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 17 -->
+                <div class="product-item reveal reveal-delay-2">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic44.jpg" alt="خیارشور 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic37.jpg" alt="خیارشور 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">خانگی</span>
+                        <h3>خیارشور</h3>
+                        <p class="description">
+                            خیارشور خانگی با طعم ترش و ترد، تهیه‌شده به روش سنتی بدون مواد افزودنی مصنوعی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🥒 ترد و تازه</span>
+                                <span>🧂 خانگی</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 18 -->
+                <div class="product-item reveal reveal-delay-3">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic38.jpg" alt="رطب 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic39.jpg" alt="رطب 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">تازه</span>
+                        <h3>رطب</h3>
+                        <p class="description">
+                            رطب مضافتی درجه یک، شیرین و لطیف، مستقیم از نخلستان‌های منتخب جنوب کشور.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🌴 مضافتی</span>
+                                <span>🍯 شیرین و تازه</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 19 -->
+                <div class="product-item reveal reveal-delay-4">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic50.jpg" alt="تخم مرغ محلی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic51.jpg" alt="تخم مرغ محلی 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">محلی</span>
+                        <h3>تخم مرغ محلی</h3>
+                        <p class="description">
+                            تخم مرغ تازه از مرغ‌های محلی، بدون هورمون و با تغذیه طبیعی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🥚 محلی</span>
+                                <span>🌿 طبیعی</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 20 -->
+                <div class="product-item reveal reveal-delay-5">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic53.jpg" alt="گردو ایرانی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic54.jpg" alt="گردو ایرانی 2" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                                <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">درجه یک</span>
+                        <h3>گردو ایرانی</h3>
+                        <p class="description">
+                            مغز گردوی تازه و درجه یک، برداشت‌شده از باغات منتخب، سرشار از خواص طبیعی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🌰 تازه</span>
+                                <span>✨ درجه یک</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 21 -->
+                <div class="product-item reveal reveal-delay-1">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic52.jpg" alt="پروتئین بار سنتی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">خانگی</span>
+                        <h3>پروتئین بار سنتی</h3>
+                        <p class="description">
+                            پروتئین بار خانگی با خرما، مغزیجات و عسل طبیعی، بدون شکر و مواد افزودنی مصنوعی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>💪 پرانرژی</span>
+                                <span>🍯 طبیعی</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 22 -->
+                <div class="product-item reveal reveal-delay-2">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic49.jpg" alt="کره بادام زمینی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">خانگی</span>
+                        <h3>کره بادام زمینی</h3>
+                        <p class="description">
+                            کره بادام زمینی خانگی، خالص و طبیعی بدون روغن‌های افزودنی و شکر مصنوعی.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🥜 خالص</span>
+                                <span>🌿 طبیعی</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 23 -->
+                <div class="product-item reveal reveal-delay-3">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic58.jpg" alt="حلوا ارده 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">سنتی</span>
+                        <h3>حلوا ارده</h3>
+                        <p class="description">
+                            حلوا ارده خانگی با طعم اصیل، تهیه‌شده از ارده و شیره خالص.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🍯 خانگی</span>
+                                <span>🌿 بدون افزودنی</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 24 -->
+                <div class="product-item reveal reveal-delay-4">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic59.jpg" alt="سه‌شیره سنتی 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">سنتی</span>
+                        <h3>سه‌شیره سنتی</h3>
+                        <p class="description">
+                            سه‌شیره خالص از انگور، توت و خرما، پخته‌شده به روش سنتی با طعمی غلیظ و اصیل.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🍇 خالص</span>
+                                <span>🔥 پخت سنتی</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 25 -->
+                <div class="product-item reveal reveal-delay-5">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic60.jpg" alt="شربت به‌لیمو 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">خنک</span>
+                        <h3>شربت به‌لیمو</h3>
+                        <p class="description">
+                            شربت خانگی به‌لیمو، خوش‌عطر و گوارا، مناسب برای پذیرایی و روزهای گرم.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🍋 خوش‌عطر</span>
+                                <span>❄️ خنک‌کننده</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 26 -->
+                <div class="product-item reveal reveal-delay-1">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic61.jpg" alt="شربت سکنجبین 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">سنتی</span>
+                        <h3>شربت سکنجبین</h3>
+                        <p class="description">
+                            شربت سکنجبین اصیل با سرکه و نعناع خانگی، طعمی ترش و شیرین دلچسب.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🌿 نعناع خانگی</span>
+                                <span>🍯 ترش و شیرین</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 27 -->
+                <div class="product-item reveal reveal-delay-2">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic62.jpg" alt="رب گوجه به‌یک 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">خانگی</span>
+                        <h3>رب گوجه به‌یک</h3>
+                        <p class="description">
+                            رب گوجه‌فرنگی خانگی درجه یک، غلیظ و خالص، بدون مواد نگه‌دارنده.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🍅 غلیظ و خالص</span>
+                                <span>🌿 بدون افزودنی</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 28 -->
+                <div class="product-item reveal reveal-delay-3">
+                    <div class="image-placeholder" style="position: relative; overflow: hidden; background: var(--cream);">
+                        <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr;">
+                            <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                                <div class="slide" style="min-width: 100%; height: 100%;">
+                                    <img src="images/pic63.jpg" alt="معجون سیاه دانه 1" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ‹
+                            </button>
+                            <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                                ›
+                            </button>
+
+                            <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                                <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">سنتی</span>
+                        <h3>معجون سیاه‌دانه</h3>
+                        <p class="description">
+                            معجون خانگی سیاه‌دانه با عسل طبیعی، مناسب مصرف روزانه و تقویت بدن.
+                        </p>
+                        <div class="meta">
+                            <div class="details">
+                                <span>🖤 سیاه‌دانه</span>
+                                <span>🍯 با عسل طبیعی</span>
+                            </div>
+                            <span class="price">—</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+    SPECIALTY — بخش محصولات ویژه
+    ===================================================== -->
+    <section class="specialty" id="specialty">
+        <div class="container">
+            <div class="specialty-image">
+                <div class="slideshow-container" style="width: 100%; height: 100%; position: relative; overflow: hidden; direction: ltr; border-radius: var(--radius);">
+                    <div class="slides" style="display: flex; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+                        <div class="slide" style="min-width: 100%; height: 100%;">
+                            <img src="images/pic55.jpg" alt="محصولات ویژه 1" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="slide" style="min-width: 100%; height: 100%;">
+                            <img src="images/pic56.jpg" alt="محصولات ویژه 2" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+
+                    <button class="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                        ‹
+                    </button>
+                    <button class="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; backdrop-filter: blur(4px);">
+                        ›
+                    </button>
+
+                    <div class="dots-container" style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                        <span class="dot" data-index="0" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                        <span class="dot" data-index="1" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.3s ease;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="specialty-content">
+                <span class="section-tag">✦ محصولات برگزیده</span>
+                <h2>تهیه‌شده با <span class="gold-text">عشق و سنت</span></h2>
+                <p>
+                    محصولات ویژه ما با شیر دامداری‌های منتخب و با استفاده از روش‌های
+                    سنتی و اصیل تهیه می‌شوند. هر محصول داستان خود را دارد.
+                </p>
+                <div class="features">
+                    <div>
+                        <strong>🥛 شیر ارگانیک</strong>
+                        <span>از گاوهای تغذیه‌شده با علوفه طبیعی</span>
+                    </div>
+                    <div>
+                        <strong>🧀 ماست و پنیر </strong>
+                        <span>پنیرهای با طعم عمیق و ماندگار</span>
+                    </div>
+                    <div>
+                        <strong>🧋 کشک درجه یک</strong>
+                        <span>با کیفیت بالا و طعم اصیل</span>
+                    </div>
+                    <div>
+                        <strong>🍯 ارده دو آتیشه</strong>
+                        <span>تهیه‌شده از کنجد مرغوب و عسل طبیعی</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================================================
+    CONTACT — اطلاعات تماس بدون فرم
+    ===================================================== -->
+    <section class="contact-info" id="contact">
+        <div class="container">
+            <div>
+                <span class="section-tag">✦ تماس با ما</span>
+                <h2>ما با بهترین کیفیت در کنار <span class="gold-text">شما</span> هستیم</h2>
+                <p class="subtitle">
+                    برای سفارش‌های عمده، مشاوره و اطلاعات بیشتر با ما تماس بگیرید.
+                </p>
+                <div class="contact-details">
+                    <div class="item">
+                        <span class="icon">📍</span>
+                        <div class="info">
+                            <span class="label">آدرس</span>
+                            <span class="value" dir="rtl">فارس، شیراز، خیابان سپاه شمالی، کوچه ۶</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="icon">📞</span>
+                        <div class="info">
+                            <span class="label">تلفن</span>
+                            <span class="value">۰۷۱-۳۸۳۰۷۹۱۵</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="icon">📱</span>
+                        <div class="info">
+                            <span class="label">موبایل</span>
+                            <span class="value">۰۹۱۲-۳۷۱-۱۷۳۵</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="icon">📦</span>
+                        <div class="info">
+                            <span class="label">کد پستی</span>
+                            <span class="value" dir="ltr">۷۱۶۸۷۹۷۳۸۳</span>
+                        </div>
+                    </div>
+                    <div class="item order-link">
+                        <span class="icon">🛒</span>
+                        <div class="info">
+                            <span class="label">سفارش آنلاین با باسلام</span>
+                            <span class="value" dir="rtl">
+                                <a href="https://basalam.com/fresh-dairy-products" target="_blank" rel="noopener">جهت سفارش به صورت آنلاین کلیک کنید</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="contact-map">
+                    <img src="images/pic57.jpg" alt="نقشه موقعیت فروشگاه">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+    FOOTER — فوتر
+    ===================================================== -->
+    <footer>
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon"></span>
+                لبنیات <span>سنتی اصیل</span>
+            </a>
+            <span class="copy">© ۱۴۰۴ — تمامی حقوق محفوظ است</span>
+            <div class="social">
+        </div>
+    </footer>
+
+    <!-- =====================================================
+    JAVASCRIPT
+    ===================================================== -->
+    <script>
+        // === NAVBAR SCROLL ===
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // === MOBILE NAV ===
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // === SCROLL REVEAL ===
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.08,
+            rootMargin: '0px 0px -30px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // === اسلایدشو خودکار ===
+        document.addEventListener('DOMContentLoaded', function() {
+            const slideshows = document.querySelectorAll('.slideshow-container');
+            
+            slideshows.forEach(function(container) {
+                const slides = container.querySelector('.slides');
+                const slidesCount = slides.querySelectorAll('.slide').length;
+                const prevBtn = container.querySelector('.prev-btn');
+                const nextBtn = container.querySelector('.next-btn');
+                const dots = container.querySelectorAll('.dot');
+                let currentIndex = 0;
+                let autoSlideInterval;
+                
+                if (!prevBtn || !nextBtn) return;
+                
+                function showSlide(index) {
+                    if (index < 0) index = slidesCount - 1;
+                    if (index >= slidesCount) index = 0;
+                    currentIndex = index;
+                    slides.style.transform = `translateX(-${index * 100}%)`;
+                    
+                    dots.forEach((dot, i) => {
+                        if (i === index) {
+                            dot.style.background = 'rgba(196, 154, 108, 0.9)';
+                            dot.style.transform = 'scale(1.2)';
+                        } else {
+                            dot.style.background = 'rgba(255,255,255,0.4)';
+                            dot.style.transform = 'scale(1)';
+                        }
+                    });
+                }
+                
+                function nextSlide() {
+                    showSlide(currentIndex + 1);
+                }
+                
+                function prevSlide() {
+                    showSlide(currentIndex - 1);
+                }
+                
+                function startAutoSlide() {
+                    stopAutoSlide();
+                    autoSlideInterval = setInterval(nextSlide, 4000);
+                }
+                
+                function stopAutoSlide() {
+                    if (autoSlideInterval) {
+                        clearInterval(autoSlideInterval);
+                        autoSlideInterval = null;
+                    }
+                }
+                
+                nextBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    nextSlide();
+                    startAutoSlide();
+                });
+                
+                prevBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    prevSlide();
+                    startAutoSlide();
+                });
+                
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        showSlide(index);
+                        startAutoSlide();
+                    });
+                });
+                
+                container.addEventListener('mouseenter', stopAutoSlide);
+                container.addEventListener('mouseleave', startAutoSlide);
+                
+                showSlide(0);
+                startAutoSlide();
+            });
+        });
+
+        // === CONSOLE ===
+        console.log('🥛 لبنیات سنتی اصیل');
+        console.log('📞 تماس: ۰۷۱-۳۸۳۰۷۹۱۵');
+        console.log('📦 کد پستی : ۷۱۶۸۷۹۷۳۸۳');
+    </script>
+
+</body>
+</html>
