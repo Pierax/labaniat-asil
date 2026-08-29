@@ -1065,6 +1065,242 @@
         .reveal-delay-3 { transition-delay: 0.24s; }
         .reveal-delay-4 { transition-delay: 0.32s; }
         .reveal-delay-5 { transition-delay: 0.40s; }
+
+        /* =====================================================
+                   CART — سبد خرید
+                   ===================================================== */
+        .cart-fab {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            z-index: 1200;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: white;
+            border: none;
+            border-radius: 60px;
+            padding: 14px 24px;
+            font-family: 'Vazirmatn', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(196, 154, 108, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all var(--transition);
+        }
+
+        .cart-fab:hover {
+            transform: translateY(-3px);
+        }
+
+        .cart-fab .cart-count {
+            background: white;
+            color: var(--gold-dark);
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 800;
+        }
+
+        .cart-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 10, 12, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cart-overlay.active {
+            display: flex;
+        }
+
+        .cart-modal {
+            background: var(--warm-white);
+            border-radius: var(--radius);
+            width: 100%;
+            max-width: 640px;
+            max-height: 88vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .cart-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            background: var(--black-glossy);
+            color: white;
+        }
+
+        .cart-modal-header h3 {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .cart-close-btn {
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .cart-modal-body {
+            padding: 16px 24px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .cart-group-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 18px 0 8px;
+        }
+
+        .cart-group-title:first-child {
+            margin-top: 4px;
+        }
+
+        .cart-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 10px 4px;
+            border-bottom: 1px solid rgba(45, 27, 14, 0.06);
+        }
+
+        .cart-row .cart-item-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .cart-row .cart-item-price {
+            font-size: 0.75rem;
+            color: rgba(45, 27, 14, 0.5);
+            min-width: 90px;
+            text-align: center;
+        }
+
+        .cart-qty-control {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--cream);
+            border-radius: 60px;
+            padding: 4px;
+        }
+
+        .cart-qty-control button {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: none;
+            background: white;
+            color: var(--gold-dark);
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+
+        .cart-qty-control span {
+            min-width: 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .cart-modal-footer {
+            padding: 18px 24px 22px;
+            border-top: 1px solid rgba(45, 27, 14, 0.08);
+            background: white;
+        }
+
+        .cart-total-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 14px;
+        }
+
+        .cart-total-row .cart-total-value {
+            color: var(--gold-dark);
+        }
+
+        .cart-checkout-form {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .cart-checkout-form.active {
+            display: flex;
+        }
+
+        .cart-checkout-form input, .cart-checkout-form textarea {
+            font-family: 'Vazirmatn', sans-serif;
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(45, 27, 14, 0.15);
+            font-size: 0.9rem;
+            background: var(--cream);
+        }
+
+        .cart-modal-footer .btn {
+            width: 100%;
+            text-align: center;
+            border: none;
+        }
+
+        .cart-empty-note {
+            color: rgba(45, 27, 14, 0.4);
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .cart-note {
+            font-size: 0.72rem;
+            color: rgba(45, 27, 14, 0.45);
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            .cart-fab {
+                bottom: 16px;
+                left: 16px;
+                padding: 12px 18px;
+                font-size: 0.85rem;
+            }
+            .cart-row .cart-item-price {
+                min-width: 70px;
+                font-size: 0.68rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1081,6 +1317,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#products">محصولات</a></li>
                 <li><a href="#specialty">ویژه‌ها</a></li>
+                <li><a href="https://baralis.ir/shirligp/" target="_blank" rel="noopener">مقاله پنیر لیقوان</a></li>
                 <li><a href="#contact" class="nav-cta">تماس با ما</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -1104,6 +1341,7 @@
                     </span>
                     <span class="hero-badge">🥛 بدون مواد نگه‌دارنده</span>
                     <span class="hero-badge">🏅 کیفیت تضمینی</span>
+                    <a href="https://baralis.ir/shirligp/" target="_blank" rel="noopener" class="hero-badge" style="text-decoration:none; cursor:pointer; border-color: rgba(232,185,35,0.4);">📖 مقاله: همه‌چیز درباره پنیر لیقوان</a>
                 </div>
 
                 <h1>
@@ -1554,6 +1792,7 @@
                         <h3>پنیر تازه لیقوان گوسفندی و گاوی</h3>
                         <p class="description">
                             پنیر تازه با شیر گوسفند، نرم و لطیف با طعمی دلپذیر.
+                            <a href="https://baralis.ir/shirligp/" target="_blank" rel="noopener" style="color: var(--gold-dark); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--gold);">بیشتر بخوانید ←</a>
                         </p>
                         <div class="meta">
                             <div class="details">
@@ -2480,7 +2719,7 @@
                         <div class="info">
                             <span class="label">سفارش آنلاین با باسلام</span>
                             <span class="value" dir="rtl">
-                                <a href="https://basalam.com/fresh-dairy-products" target="_blank" rel="noopener">جهت سفارش به صورت آنلاین کلیک کنید</a>
+                                <a href="https://basalam.com/fresh-dairy-products" target="_blank" rel="noopener">جهت سفارش با "باسلام" کلیک کنید</a>
                             </span>
                         </div>
                     </div>
@@ -2507,6 +2746,40 @@
             <div class="social">
         </div>
     </footer>
+
+    <!-- =====================================================
+    CART — دکمه شناور و مودال سبد خرید
+    ===================================================== -->
+    <button class="cart-fab" id="cartFab">
+        🛒 ساختن سبد خرید <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-modal">
+            <div class="cart-modal-header">
+                <h3 id="cartModalTitle">سبد خرید</h3>
+                <button class="cart-close-btn" id="cartCloseBtn">✕</button>
+            </div>
+            <div class="cart-modal-body" id="cartModalBody">
+                <!-- لیست محصولات به‌صورت خودکار توسط جاوااسکریپت اینجا ساخته می‌شود -->
+            </div>
+            <div class="cart-modal-footer">
+                <div class="cart-total-row">
+                    <span>جمع سبد خرید:</span>
+                    <span class="cart-total-value" id="cartTotalValue">۰ تومان</span>
+                </div>
+
+                <div class="cart-checkout-form" id="cartCheckoutForm">
+                    <input type="text" id="custName" placeholder="نام و نام‌خانوادگی">
+                    <input type="tel" id="custPhone" placeholder="شماره موبایل (برای پیگیری سفارش)">
+                    <textarea id="custAddress" placeholder="آدرس کامل جهت ارسال و توضیحات نهایی" rows="2"></textarea>
+                </div>
+
+                <button class="btn btn-primary" id="cartActionBtn">مرحله بعد</button>
+                <div class="cart-note" id="cartNote"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- =====================================================
     JAVASCRIPT
@@ -2639,6 +2912,256 @@
         console.log('🥛 لبنیات سنتی اصیل');
         console.log('📞 تماس: ۰۷۱-۳۸۳۰۷۹۱۵');
         console.log('📦 کد پستی : ۷۱۶۸۷۹۷۳۸۳');
+    </script>
+
+    <!-- =====================================================
+    سبد خرید و اتصال به درگاه زرین‌پال
+    =====================================================
+    راهنما در پاسخ چت توضیح داده شده. نکات مهم:
+    1) قیمت هر محصول را در آبجکت PRODUCTS پایین (فیلد price) به تومان وارد کنید. صفر یعنی «قیمت‌گذاری نشده».
+    2) آدرس بک‌اند زرین‌پال را در متغیر ZARINPAL_REQUEST_ENDPOINT وارد کنید (فایل نمونه PHP جداگانه تحویل داده شده).
+    ===================================================== -->
+    <script>
+    (function () {
+        // ============ ۱) لیست محصولات و قیمت‌ها — اینجا ویرایش کنید ============
+        // هر ردیف: { id, name, group, price }  — price به تومان و صفر یعنی هنوز قیمت‌گذاری نشده
+        const PRODUCTS = [
+            { id: 'milk-fresh',        name: 'شیر تازه گاوی کیلویی',                 group: 'لبنیات',               price: 0 },
+            { id: 'yogurt-full-fat',   name: 'ماست پرچرب کیلویی',                    group: 'لبنیات',               price: 0 },
+            { id: 'yogurt-low-fat',    name: 'ماست کم‌چرب کیلویی',                   group: 'لبنیات',               price: 0 },
+            { id: 'yogurt-mooseer',    name: 'ماست موسیر کیلویی',                    group: 'لبنیات',               price: 0 },
+            { id: 'butter-organic',    name: 'کره حیوانی ارگانیک کیلویی',            group: 'لبنیات',               price: 0 },
+            { id: 'kashk',             name: 'کشک محلی گوسفندی نرم کیلویی',                      group: 'لبنیات',               price: 0 },
+            { id: 'cheese-ligvan-sheep', name: 'پنیر سفید سنتی گوسفندی لیقوان 1 کیلویی',    group: 'لبنیات',               price: 0 },
+            { id: 'cheese-ligvan-sheep', name: 'پنیر سنتی گوسفندی اصل لیقوان 1 کیلویی',    group: 'لبنیات',               price: 0 },
+            { id: 'cheese-ligvan-sheep', name: 'پنیر سنتی گوسفندی اصل لیقوان 400 گرمی',    group: 'لبنیات',               price: 0 },
+            { id: 'cheese-ligvan-cow', name: 'پنیر سنتی تازه لیقوان گاوی 1 کیلویی',         group: 'لبنیات',               price: 0 },
+            { id: 'sarshir',           name: 'سرشیر 150 گرمی',                         group: 'لبنیات',               price: 0 },
+            { id: 'mastine',           name: 'ماستینه',                       group: 'لبنیات',               price: 0 },
+            { id: 'doogh-mint',        name: 'دوغ سنتی (نعناع و گل‌محمدی)',   group: 'نوشیدنی‌ها',           price: 0 },
+            { id: 'doogh-mint',        name: 'دوغ سنتی 4 لیتری (نعناع و گل‌محمدی)',   group: 'نوشیدنی‌ها',           price: 0 },
+            { id: 'doogh-camel',       name: 'دوغ شتر',                       group: 'نوشیدنی‌ها',           price: 0 },
+            { id: 'sharbat-belimoo',   name: 'شربت به‌لیمو',                   group: 'نوشیدنی‌ها',           price: 0 },
+            { id: 'sharbat-sekanjabin',name: 'شربت سکنجبین',                  group: 'نوشیدنی‌ها',           price: 0 },
+            { id: 'ardeh-zarghani',    name: 'ارده زرقانی',                   group: 'ارده، شیره و حلوا',    price: 0 },
+            { id: 'angur-shireh',      name: 'شیره انگور',                    group: 'ارده، شیره و حلوا',    price: 0 },
+            { id: 'halva-zarghani',    name: 'حلوای زرقانی',                  group: 'ارده، شیره و حلوا',    price: 0 },
+            { id: 'halva-ardeh',       name: 'حلوا ارده خانگی کیلویی',               group: 'ارده، شیره و حلوا',    price: 0 },
+            { id: 'seh-shireh',        name: 'سه‌شیره سنتی',                  group: 'ارده، شیره و حلوا',    price: 0 },
+            { id: 'bread-dry',         name: 'نان خشک جو',                       group: 'نان و چیپس',           price: 0 },
+            { id: 'bread-dry',         name: 'نان خشک گل گندم هیزمی',                       group: 'نان و چیپس',           price: 0 },
+            { id: 'bread-chips',       name: 'نان چیپس',                      group: 'نان و چیپس',           price: 0 },
+            { id: 'aloocheh',          name: 'آلوچه جنگلی',                   group: 'ترشیجات و شیرینی سنتی', price: 0 },
+            { id: 'lavashak',          name: 'لواشک',                         group: 'ترشیجات و شیرینی سنتی', price: 0 },
+            { id: 'ghereghoroot',      name: 'قرقروت تمشک',                   group: 'ترشیجات و شیرینی سنتی', price: 0 },
+            { id: 'cucumber-pickle',   name: 'خیارشور شیشه ای',                       group: 'ترشیجات و شیرینی سنتی', price: 0 },
+            { id: 'cucumber-pickle',   name: 'خیارشور کیلویی',                       group: 'ترشیجات و شیرینی سنتی', price: 0 },
+            { id: 'tamarind',          name: 'تمر هندی',                      group: 'ترشیجات و شیرینی سنتی', price: 0 },
+            { id: 'honey-gon',         name: 'عسل گون',                       group: 'عسل، زعفران و ادویه',  price: 0 },
+            { id: 'saffron',           name: 'زعفران نیم گرمی',                        group: 'عسل، زعفران و ادویه',  price: 0 },
+            { id: 'olive-pickled',     name: 'زیتون شیشه ای',                  group: 'زیتون و روغن زیتون',   price: 0 },
+            { id: 'olive-pickled',     name: 'زیتون مسافرتی',                  group: 'زیتون و روغن زیتون',   price: 0 },
+            { id: 'olive-oil',         name: 'روغن زیتون خالص',               group: 'زیتون و روغن زیتون',   price: 0 },
+            { id: 'kolucheh',          name: 'کلوچه خانگی',                   group: 'شیرینی و آجیل',        price: 0 },
+            { id: 'walnut',            name: 'گردو ایرانی کیلویی',                   group: 'شیرینی و آجیل',        price: 0 },
+            { id: 'protein-bar',       name: 'پروتئین بار سنتی',              group: 'شیرینی و آجیل',        price: 0 },
+            { id: 'peanut-butter',     name: 'کره بادام زمینی',               group: 'شیرینی و آجیل',        price: 0 },
+            { id: 'rotab',             name: 'رطب مضافتی',                    group: 'سایر محصولات',         price: 0 },
+            { id: 'egg-local',         name: 'تخم مرغ محلی',                  group: 'سایر محصولات',         price: 0 },
+            { id: 'tomato-paste',      name: 'رب گوجه به‌یک',                  group: 'سایر محصولات',         price: 0 },
+            { id: 'blackseed-majoun',  name: 'معجون سیاه‌دانه',               group: 'سایر محصولات',         price: 0 },
+        ];
+
+        // ============ ۲) تنظیمات درگاه پرداخت زرین‌پال ============
+        // چون سایت شما روی GitHub Pages است (که PHP اجرا نمی‌کند)، این آدرس باید به
+        // Cloudflare Worker شما اشاره کند، نه یک فایل PHP. بعد از دیپلوی ورکر،
+        // آدرس آن را (چیزی شبیه https://your-worker-name.your-subdomain.workers.dev) اینجا جایگزین کنید.
+        const ZARINPAL_REQUEST_ENDPOINT = 'https://your-worker-name.your-subdomain.workers.dev/request';
+
+        // ============ وضعیت سبد خرید ============
+        const cart = {}; // { productId: qty }
+
+        const cartFab = document.getElementById('cartFab');
+        const cartOverlay = document.getElementById('cartOverlay');
+        const cartCloseBtn = document.getElementById('cartCloseBtn');
+        const cartModalBody = document.getElementById('cartModalBody');
+        const cartModalTitle = document.getElementById('cartModalTitle');
+        const cartCount = document.getElementById('cartCount');
+        const cartTotalValue = document.getElementById('cartTotalValue');
+        const cartActionBtn = document.getElementById('cartActionBtn');
+        const cartCheckoutForm = document.getElementById('cartCheckoutForm');
+        const cartNote = document.getElementById('cartNote');
+
+        let viewMode = 'list'; // 'list' | 'checkout'
+
+        function formatToman(n) {
+            return n.toLocaleString('fa-IR') + ' تومان';
+        }
+
+        function getTotal() {
+            return PRODUCTS.reduce((sum, p) => sum + (cart[p.id] || 0) * p.price, 0);
+        }
+
+        function getItemCount() {
+            return Object.values(cart).reduce((a, b) => a + b, 0);
+        }
+
+        function renderProductList() {
+            viewMode = 'list';
+            cartModalTitle.textContent = 'ساختن سبد خرید';
+            cartCheckoutForm.classList.remove('active');
+            cartActionBtn.textContent = 'مرحله بعد (نهایی کردن سفارش)';
+            cartNote.textContent = '';
+
+            let html = '';
+            let lastGroup = null;
+            PRODUCTS.forEach(p => {
+                if (p.group !== lastGroup) {
+                    html += `<div class="cart-group-title">${p.group}</div>`;
+                    lastGroup = p.group;
+                }
+                const qty = cart[p.id] || 0;
+                html += `
+                    <div class="cart-row">
+                        <span class="cart-item-name">${p.name}</span>
+                        <span class="cart-item-price">${p.price > 0 ? formatToman(p.price) : 'به‌زودی'}</span>
+                        <div class="cart-qty-control">
+                            <button data-action="dec" data-id="${p.id}">−</button>
+                            <span>${qty}</span>
+                            <button data-action="inc" data-id="${p.id}">+</button>
+                        </div>
+                    </div>`;
+            });
+            cartModalBody.innerHTML = html;
+            updateTotals();
+        }
+
+        function renderCheckoutSummary() {
+            viewMode = 'checkout';
+            cartModalTitle.textContent = 'تکمیل سفارش';
+            cartCheckoutForm.classList.add('active');
+            cartActionBtn.textContent = 'پرداخت با زرین‌پال';
+            cartNote.textContent = 'پس از پرداخت موفق، به همین سایت بازخواهید گشت.';
+
+            const items = PRODUCTS.filter(p => cart[p.id] > 0);
+            if (items.length === 0) {
+                cartModalBody.innerHTML = '<div class="cart-empty-note">سبد خرید شما خالی است.</div>';
+                return;
+            }
+            let html = '';
+            items.forEach(p => {
+                const qty = cart[p.id];
+                html += `
+                    <div class="cart-row">
+                        <span class="cart-item-name">${p.name} × ${qty}</span>
+                        <span class="cart-item-price">${formatToman(p.price * qty)}</span>
+                    </div>`;
+            });
+            cartModalBody.innerHTML = html;
+        }
+
+        function updateTotals() {
+            cartCount.textContent = getItemCount();
+            cartTotalValue.textContent = formatToman(getTotal());
+        }
+
+        function openCart() {
+            cartOverlay.classList.add('active');
+            renderProductList();
+        }
+
+        function closeCart() {
+            cartOverlay.classList.remove('active');
+        }
+
+        cartFab.addEventListener('click', openCart);
+        cartCloseBtn.addEventListener('click', closeCart);
+        cartOverlay.addEventListener('click', (e) => {
+            if (e.target === cartOverlay) closeCart();
+        });
+
+        cartModalBody.addEventListener('click', (e) => {
+            const btn = e.target.closest('button[data-action]');
+            if (!btn) return;
+            const id = btn.dataset.id;
+            const action = btn.dataset.action;
+            const current = cart[id] || 0;
+            if (action === 'inc') cart[id] = current + 1;
+            if (action === 'dec') cart[id] = Math.max(0, current - 1);
+            if (cart[id] === 0) delete cart[id];
+            renderProductList();
+        });
+
+        cartActionBtn.addEventListener('click', async () => {
+            if (viewMode === 'list') {
+                if (getItemCount() === 0) {
+                    cartNote.textContent = 'لطفاً حداقل یک محصول انتخاب کنید.';
+                    return;
+                }
+                renderCheckoutSummary();
+                updateTotals();
+                return;
+            }
+
+            // ============ مرحله پرداخت ============
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const address = document.getElementById('custAddress').value.trim();
+
+            if (!name || !phone || !address) {
+                cartNote.textContent = 'لطفاً نام، شماره موبایل و آدرس را کامل وارد کنید.';
+                return;
+            }
+
+            const items = PRODUCTS.filter(p => cart[p.id] > 0).map(p => ({
+                id: p.id, name: p.name, qty: cart[p.id], price: p.price
+            }));
+            const amount = getTotal();
+
+            if (amount <= 0) {
+                cartNote.textContent = 'قیمت محصولات انتخابی هنوز تعیین نشده است.';
+                return;
+            }
+
+            cartActionBtn.disabled = true;
+            cartActionBtn.textContent = 'در حال اتصال به درگاه...';
+
+            try {
+                const res = await fetch(ZARINPAL_REQUEST_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ amount, name, phone, address, items })
+                });
+                const data = await res.json();
+
+                if (data && data.status && data.url) {
+                    // انتقال کاربر به صفحه پرداخت زرین‌پال
+                    window.location.href = data.url;
+                } else {
+                    cartNote.textContent = 'خطا در اتصال به درگاه پرداخت. لطفاً دوباره تلاش کنید.';
+                    cartActionBtn.disabled = false;
+                    cartActionBtn.textContent = 'پرداخت با زرین‌پال';
+                }
+            } catch (err) {
+                cartNote.textContent = 'خطا در ارتباط با سرور. لطفاً بعداً دوباره تلاش کنید.';
+                cartActionBtn.disabled = false;
+                cartActionBtn.textContent = 'پرداخت با زرین‌پال';
+            }
+        });
+
+        // ============ نمایش پیام بازگشت از درگاه (بعد از کال‌بک) ============
+        // اگر بک‌اند شما بعد از تایید پرداخت کاربر را با پارامتر order_status به این صفحه هدایت کند،
+        // این بخش پیام مناسب را نشان می‌دهد. مثال: yoursite.ir/?order_status=success
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const status = params.get('order_status');
+            if (status === 'success') {
+                alert('پرداخت با موفقیت انجام شد. از خرید شما سپاسگزاریم!');
+            } else if (status === 'failed') {
+                alert('پرداخت ناموفق بود یا توسط شما لغو شد.');
+            }
+        });
+    })();
     </script>
 
 </body>
