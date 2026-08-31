@@ -847,7 +847,7 @@
         }
 
         /* =====================================================
-                   FOOTER — فوتر ساده و اصیل
+                   FOOTER — فوتر با لوگوی اینماد وسط
                    ===================================================== */
         footer {
             background: var(--black-glossy);
@@ -867,6 +867,7 @@
         footer .logo {
             color: white;
             font-size: 1.6rem;
+            order: 1; /* چپ */
         }
 
         footer .logo-icon {
@@ -880,22 +881,26 @@
 
         footer .copy {
             font-size: 0.8rem;
+            order: 3; /* راست */
         }
 
-        footer .social {
-            display: flex;
-            gap: 16px;
+        /* استایل لوگوی اینماد */
+        .namad-logo {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            line-height: 0;
+            order: 2; /* وسط */
         }
 
-        footer .social a {
-            color: rgba(255, 255, 255, 0.3);
-            text-decoration: none;
-            font-size: 1.4rem;
-            transition: all var(--transition);
+        .namad-logo:hover {
+            transform: scale(1.05);
         }
 
-        footer .social a:hover {
-            color: var(--gold);
+        .namad-logo img {
+            width: 80px;
+            height: auto;
+            filter: brightness(0.9);
+            border-radius: 4px;
         }
 
         /* =====================================================
@@ -1005,6 +1010,23 @@
             footer .container {
                 flex-direction: column;
                 text-align: center;
+                gap: 12px;
+            }
+
+            footer .logo {
+                order: 1;
+            }
+
+            footer .namad-logo {
+                order: 2;
+            }
+
+            footer .copy {
+                order: 3;
+            }
+
+            .namad-logo img {
+                width: 70px;
             }
         }
 
@@ -2734,16 +2756,23 @@
     </section>
 
     <!-- =====================================================
-    FOOTER — فوتر
+    FOOTER — فوتر با لوگوی اینماد وسط
     ===================================================== -->
     <footer>
         <div class="container">
+            <!-- سمت چپ: لوگو برند -->
             <a href="#" class="logo">
                 <span class="logo-icon"></span>
                 لبنیات <span>سنتی اصیل</span>
             </a>
+            
+            <!-- وسط: لوگوی اینماد -->
+            <a href="https://trustseal.enamad.ir/Verify.aspx?p=<a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=7555104&Code=IZPohJtdAsX9rt2nbpEXbMRZG0T0gkqh'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=7555104&Code=IZPohJtdAsX9rt2nbpEXbMRZG0T0gkqh' alt='' style='cursor:pointer' code='IZPohJtdAsX9rt2nbpEXbMRZG0T0gkqh'></a>" target="_blank" rel="noopener noreferrer" class="namad-logo" title="نماد اعتماد الکترونیکی">
+                <img src="https://trustseal.enamad.ir/logo.aspx?p=<a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=7555104&Code=IZPohJtdAsX9rt2nbpEXbMRZG0T0gkqh'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=7555104&Code=IZPohJtdAsX9rt2nbpEXbMRZG0T0gkqh' alt='' style='cursor:pointer' code='IZPohJtdAsX9rt2nbpEXbMRZG0T0gkqh'></a>" alt="نماد اعتماد الکترونیکی">
+            </a>
+            
+            <!-- سمت راست: کپی‌رایت -->
             <span class="copy">© ۱۴۰۴ — تمامی حقوق محفوظ است</span>
-            <div class="social">
         </div>
     </footer>
 
